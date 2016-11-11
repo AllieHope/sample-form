@@ -42,7 +42,7 @@ function resumeCarousel(){
 function validateEmail(){
     var email = $("#email").val();
     var pattern = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-    return pattern.test(email);
+    return email === "" ? true : pattern.test(email);
 }
 
 function validateRequiredFields(formId){
@@ -58,7 +58,7 @@ function validateRequiredFields(formId){
 function validateURL(){
     var url = $("#website").val();
     var pattern = /^(https?\:\/\/)([a-zA-Z]|[0-9]|\/)+(\.[a-zA-Z]*)+\/?(\?|\#|\&|\=|\$|\-|\_|\.|\+|\!|\*|\'|\(|\)|\,|[a-zA-Z]|[0-9])*$/g;
-    return pattern.test(url);
+    return url === "" ? true : pattern.test(url);
 }
 
 //Function that is run on form submission which runs all helper validation functions
