@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css" crossorigin="anonymous">  
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <div class="main-container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img src="https://source.unsplash.com/category/nature/900x500" alt='First slide'>
+            </div>
+            <div class="carousel-item">
+              <img src="https://source.unsplash.com/category/nature/900x500" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img src="https://source.unsplash.com/category/nature/900x500" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img src="https://source.unsplash.com/category/nature/900x500" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+              <img src="https://source.unsplash.com/category/nature/900x500" alt="Fifth slide">
+            </div>
+          </div>
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="icon-prev" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="icon-next" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="button-container">
+        <div class="btn-group" role="group" aria-label="...">
+            <button type="button" id="pauseButton" class="btn btn-default" onclick="pauseCarousel()">Pause</button>
+            <button type="button" id="resumeButton" class="btn btn-default" style="display:none;visibility:hidden" onclick="resumeCarousel()">Resume</button>
+        </div>
+       </div>
+        <div class="main-container">
+            <form id="testForm" onSubmit="validateForm()">
+                <div class="form-group">
+                    <label name="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+                    <small id="nameHelp" class="form-text text-muted">*required</small>
+                </div>
+                <div class="form-group">
+                    <label name="email">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label name="website">Website URL</label>
+                    <input type="text" class="form-control" id="website" placeholder="Enter your website URL">
+                </div>
+                <div class="form-group">
+                    <label name="message">Add a message here</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                    <small id="messageHelp" class="form-text text-muted">*required</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+    <!-- Third party and external scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+
